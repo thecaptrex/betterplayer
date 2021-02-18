@@ -363,23 +363,75 @@ class _BetterPlayerMaterialControlsState
   }
 
   Widget _buildMiddleRow() {
+
     return Padding(
+
       padding: const EdgeInsets.symmetric(horizontal: 16),
+
       child: Row(
+
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
         children: [
+
           if (_controlsConfiguration.enableSkips)
+
             _buildSkipButton()
+
           else
+
             const SizedBox(),
-          _buildReplayButton(),
+
+          _buildPlayPauseMid(_controller),
+
           if (_controlsConfiguration.enableSkips)
+
             _buildForwardButton()
+
           else
+
             const SizedBox(),
+
         ],
+
       ),
+
     );
+
+  }
+
+Widget _buildPlayPauseMid(VideoPlayerController controller) {
+
+    return BetterPlayerMaterialClickableWidget(
+
+      onTap: _onPlayPause,
+
+      child: Container(
+
+        height: _controlsConfiguration.controlBarHeight,
+
+        margin: const EdgeInsets.symmetric(horizontal: 4),
+
+        padding: const EdgeInsets.symmetric(horizontal: 12),
+
+        child: Icon(
+
+          controller.value.isPlaying
+
+              ? _controlsConfiguration.pauseIcon
+
+              : _controlsConfiguration.playIcon,
+
+          color: _controlsConfiguration.iconsColor,
+
+          size: 40
+
+        ),
+
+      ),
+
+    );
+
   }
 
   Widget _buildHitAreaClickableButton(
