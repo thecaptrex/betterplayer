@@ -374,23 +374,23 @@ class _BetterPlayerMaterialControlsState
 
         children: [
 
-          if (_controlsConfiguration.enableSkips)
+//           if (_controlsConfiguration.enableSkips)
 
-            _buildSkipButton()
+            _buildSkipButton(),
 
-          else
+//           else
 
-            const SizedBox(),
+//             const SizedBox(),
 
           _buildPlayPauseMid(_controller),
 
-          if (_controlsConfiguration.enableSkips)
+//           if (_controlsConfiguration.enableSkips)
 
-            _buildForwardButton()
+//             _buildForwardButton()
 
-          else
+//           else
 
-            const SizedBox(),
+//             const SizedBox(),
 
         ],
 
