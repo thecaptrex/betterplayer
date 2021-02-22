@@ -445,7 +445,7 @@ Widget _buildPlayPauseMid(VideoPlayerController controller) {
             borderRadius: BorderRadius.circular(48),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.all(10),
             child: Stack(
               children: [icon],
             ),
