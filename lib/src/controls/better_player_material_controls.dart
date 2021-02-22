@@ -374,21 +374,21 @@ class _BetterPlayerMaterialControlsState
 
         children: [
 
-//           if (_controlsConfiguration.enableSkips)
+          if (_controlsConfiguration.enableSkips)
 
             _buildSkipButton(),
 
-//           else
+          else
 
-//             const SizedBox(),
+            const SizedBox(),
 
           _buildPlayPauseMid(_controller),
 
-//           if (_controlsConfiguration.enableSkips)
+          if (_controlsConfiguration.enableSkips)
 
-//             _buildForwardButton()
+            _buildForwardButton()
 
-//           else
+          else
 
             const SizedBox(),
 
@@ -412,7 +412,7 @@ Widget _buildPlayPauseMid(VideoPlayerController controller) {
 
         margin: const EdgeInsets.symmetric(horizontal: 4),
 
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
 
         child: Icon(
 
@@ -445,7 +445,7 @@ Widget _buildPlayPauseMid(VideoPlayerController controller) {
             borderRadius: BorderRadius.circular(48),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(12),
             child: Stack(
               children: [icon],
             ),
@@ -471,9 +471,9 @@ Widget _buildPlayPauseMid(VideoPlayerController controller) {
       icon: Icon(
         _controlsConfiguration.skipForwardIcon,
         size: 32,
-        color: _controlsConfiguration.iconsColor,
+        color: Color.fromARGB(0, 0, 0, 0),
       ),
-      onClicked: skipForward,
+      onClicked: (){},
     );
   }
 
