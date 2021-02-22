@@ -376,7 +376,7 @@ class _BetterPlayerMaterialControlsState
 
           if (_controlsConfiguration.enableSkips)
 
-            _buildSkipButton(),
+            _buildSkipButton()
 
           else
 
