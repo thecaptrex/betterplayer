@@ -390,7 +390,7 @@ class _BetterPlayerMaterialControlsState
 
 //           else
 
-//             const SizedBox(),
+            const SizedBox(),
 
         ],
 
