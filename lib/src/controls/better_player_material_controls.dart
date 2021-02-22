@@ -412,7 +412,7 @@ Widget _buildPlayPauseMid(VideoPlayerController controller) {
 
         margin: const EdgeInsets.symmetric(horizontal: 4),
 
-        padding: const EdgeInsets.symmetric(horizontal: 12),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
 
         child: Icon(
 
