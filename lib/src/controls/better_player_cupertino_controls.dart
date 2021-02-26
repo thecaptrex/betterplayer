@@ -197,7 +197,8 @@ class _BetterPlayerCupertinoControlsState
                         else
                           const SizedBox(),
                         if (_controlsConfiguration.enablePlayPause)
-                          _buildSkipForward(iconColor, barHeight)
+//                           _buildSkipForward(iconColor, barHeight)
+                        const SizedBox()
                         else
                           const SizedBox(),
                         if (_controlsConfiguration.enableProgressText)
