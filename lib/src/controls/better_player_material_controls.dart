@@ -386,7 +386,7 @@ class _BetterPlayerMaterialControlsState
 
           if (_controlsConfiguration.enableSkips)
 
-            _buildForwardButton()
+           SizedBox()
 
           else
 
